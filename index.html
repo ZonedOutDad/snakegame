@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Snake (Prototype)</h1>
+    <div id="controls">
+      <button id="connectWallet">Connect Wallet</button>
+      <span id="walletAddress" class="muted"></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="game-container">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div id="status"></div>
+        <div class="instructions">
+          Use arrow keys or WASD to move. Press Space to pause / resume.
+        </div>
+        <div class="actions">
+          <button id="submitScore" disabled>Submit Score</button>
+        </div>
+        <div class="leaderboard">
+          <h3>Leaderboard</h3>
+          <ol id="leaderboardList"></ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <small>Prototype — not production-ready. See README for Solana integration notes.</small>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
